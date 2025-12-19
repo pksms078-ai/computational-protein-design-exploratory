@@ -1,5 +1,7 @@
 git commit -m "Initial commit: exploratory computational protein design framework"
 git add .gitignore LICENSE
 git commit -m "Add gitignore and MIT license"
+git add CITATION.cff
+git commit -m "Add CITATION file for academic referencing"
 git push
 
