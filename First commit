@@ -4,4 +4,7 @@ git commit -m "Add gitignore and MIT license"
 git add CITATION.cff
 git commit -m "Add CITATION file for academic referencing"
 git push
+git add README.md
+git commit -m "Add citation instructions to README"
+git push
 
