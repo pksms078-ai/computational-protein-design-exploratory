@@ -1,0 +1,28 @@
+CITATION.cff
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Computational Protein Design using Machine Learning and Molecular Dynamics"
+authors:
+  - family-names: "Kumar"
+    given-names: "Prabin"
+    orcid: "https://orcid.org/0009-0004-1912-4801"
+version: "0.1.0"
+date-released: 2025-01-01
+repository-code: "https://github.com/PrabinKumar/<computational-protein-design-exploratory
+>"
+license: MIT
+keywords:
+  - Computational Protein Design
+  - Machine Learning
+  - Molecular Dynamics
+  - Protein Engineering
+  - Bioinformatics
+  - Synthetic Biology
+  - Drug Discovery
+abstract: >
+  This repository provides a computational framework for protein design
+  using machine learning models and molecular dynamics simulations.
+  The project integrates neural networks for protein structure prediction,
+  reinforcement learning for functional optimization, and molecular
+  simulation tools to enable rational protein engineering for
+  pharmaceutical, agricultural, and biotechnology applications.
