@@ -23,3 +23,9 @@ and limitations in computational protein engineering.
 ## Disclaimer
 This repository represents independent exploratory research and is not intended
 for clinical or commercial use.
+
+## Citation
+If you use this work, please cite:
+DOI: https://doi.org/10.5281/zenodo.17984122
+
+
