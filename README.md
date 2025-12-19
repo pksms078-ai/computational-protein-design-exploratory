@@ -23,3 +23,17 @@ and limitations in computational protein engineering.
 ## Disclaimer
 This repository represents independent exploratory research and is not intended
 for clinical or commercial use.
+
+## 📖 How to Cite
+
+If you use this repository in academic research, publications, or commercial work,
+please cite it as follows:
+
+**Prabin Kumar.**  
+*Computational Protein Design using Machine Learning and Molecular Dynamics.*  
+GitHub Repository, 2025.  
+Available at: https://github.com/PrabinKumar/<computational-protein-design-exploratory
+>
+
+A `CITATION.cff` file is provided for automated citation tools.
+
