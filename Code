@@ -30,3 +30,31 @@ def run_simulation(structure_file):
  traj = traj.center_coordinates()
  traj = traj.superpose(reference=traj, atom_indices=traj.top.select('protein and name CA'))
  traj.save('output.dcd')
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+
+def create_baseline_model(input_dim=20):
+    """
+    Baseline neural network for protein sequence representation.
+    """
+    model = Sequential([
+        Dense(64, activation='relu', input_shape=(input_dim,)),
+        Dropout(0.2),
+        Dense(32, activation='relu'),
+        Dense(16, activation='softmax')
+    ])
+    model.compile(
+        optimizer='adam',
+        loss='categorical_crossentropy',
+        metrics=['accuracy']
+    )
+    return model
+import mdtraj as md
+
+def run_basic_simulation(structure_file):
+    """
+    Basic trajectory processing for exploratory analysis.
+    """
+    traj = md.load(structure_file)
+    traj.center_coordinates()
+    return traj
