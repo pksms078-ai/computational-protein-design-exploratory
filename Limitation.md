@@ -67,3 +67,23 @@ scientific transparency and responsible interpretation.
 This work is designed to **assist decision-making**, not replace experimental science.
 Its value lies in narrowing possibilities, documenting assumptions, and enabling
 reproducible exploration.
+
+# Limitations
+
+This repository presents an exploratory computational framework for protein design.
+The following limitations are explicitly acknowledged to ensure scientific transparency and responsible use.
+
+---
+
+## Biological Validation Limitations
+
+- The framework does **not claim experimental or clinical validation**.
+- All results are computational and intended for **hypothesis generation**, not biological confirmation.
+- Wet-lab validation (expression, folding, binding, activity assays) is outside the scope of this work.
+
+---
+
+## Dataset Constraints
+
+- Model performance is dependent on the quality, size, and representativeness of input
+
