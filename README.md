@@ -31,4 +31,8 @@ DOI: https://doi.org/10.5281/zenodo.17984122
 This framework aims to reduce protein design search space using computational methods.
 It does not claim biological efficacy or experimental success.
 
+## Versions & DOI
+
+- v0.1.0 (Initial Framework): DOI: 10.5281/zenodo.17984122
+- v0.2.0 (Validated & Benchmarked): DOI: 10.5281/zenodo.17999758
 
