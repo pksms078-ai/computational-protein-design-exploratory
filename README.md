@@ -28,4 +28,7 @@ for clinical or commercial use.
 If you use this work, please cite:
 DOI: https://doi.org/10.5281/zenodo.17984122
 
+This framework aims to reduce protein design search space using computational methods.
+It does not claim biological efficacy or experimental success.
+
 
