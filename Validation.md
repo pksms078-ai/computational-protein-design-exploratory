@@ -73,10 +73,51 @@ Validation Type:
 - Pre-experimental
 - Exploratory
 
+This validation confirms computational plausibility, not experimental proof.
+
+## Level 3 Validation Question
+
+Can the computational framework:
+- Handle multiple protein sequences consistently?
+- Produce stable, non-random ML outputs?
+- Generate reproducible molecular simulation behavior under fixed conditions?
+
+## Input Stress Validation
+
+The framework was tested with multiple protein sequences of varying lengths.
+Observations:
+- No system crashes observed
+- ML outputs remained stable for similar input patterns
+- Computational cost scaled predictably
+
+## Reproducibility Validation
+
+Identical inputs with fixed parameters produced consistent outputs across multiple runs.
+Minor numerical variation observed is within expected stochastic tolerance.
+
+## Molecular Simulation Sanity Checks
+
+Molecular dynamics simulations were evaluated for:
+- Structural continuity
+- Energy stability
+- Absence of non-physical artifacts
+
+Results indicate physically plausible behavior under tested conditions.
+
+## Explicit Limitations
+
+- This validation does not replace experimental wet-lab verification
+- Biological efficacy is not claimed
+- The framework is intended to reduce experimental search space, not confirm biological outcomes
+- Results are exploratory and hypothesis-generating
+
+### Validation Status
+✔ Computationally validated  
+✔ Reproducible  
+✔ Sanity-checked  
+
 Validated By:
 Prabin Kumar  
 Independent Research Scientist  
 Date: 20.12.2025
-
-This validation confirms computational plausibility, not experimental proof.
-
+⚠ Experimental validation pending
