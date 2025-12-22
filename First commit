@@ -38,3 +38,14 @@ git commit -m "feat: add benchmarking, in-silico validation, use-case notebook, 
 git push origin main
 v0.3.0: Benchmarking, in-silico proxy, use-case notebook, proposal-ready structure
 git push
+git status
+git add .
+git commit -m "v0.3.0: Add benchmarking, in-silico validation proxy, use-case structure, and research-ready documentation
+
+- Added minimal runtime benchmark for ML workflow
+- Defined in-silico experimental proxy (non-claim, exploratory)
+- Improved validation, limitations, roadmap, and benchmarking docs
+- Aligned repository with Zenodo DOI for citation
+- Prepared project for academic, industry, and grant review"
+git push origin main
+
