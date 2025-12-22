@@ -11,4 +11,4 @@ git status
 git add benchmark_runtime.py Benchmarking.md
 git commit -m "Add ML inference runtime benchmark (10 vs 100 sequences)"
 git push origin main
-
+“I benchmarked ML inference scalability using controlled dummy inputs to validate runtime behavior before expensive molecular simulations.”
