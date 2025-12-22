@@ -48,4 +48,9 @@ git commit -m "v0.3.0: Add benchmarking, in-silico validation proxy, use-case st
 - Aligned repository with Zenodo DOI for citation
 - Prepared project for academic, industry, and grant review"
 git push origin main
+Finalize benchmarking: runtime scaling, conceptual comparison, and visualization
+git add benchmarking.md benchmark_plot.py benchmark_runtime.png
+git commit -m "Finalize benchmarking: runtime scaling, conceptual comparison, and visualization"
+git push
+
 
