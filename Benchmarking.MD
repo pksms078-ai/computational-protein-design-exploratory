@@ -116,4 +116,5 @@ This is suitable for:
 - Early R&D pipelines
 - Resource-limited research environments
 
+This benchmark demonstrates linear scaling behavior of the ML inference component with respect to sequence count. The objective is not biological accuracy, but to validate computational feasibility, pipeline structure, and performance characteristics suitable for early-stage protein design exploration.
 
