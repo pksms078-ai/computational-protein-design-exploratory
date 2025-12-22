@@ -129,3 +129,59 @@ if __name__ == "__main__":
         print(f"Inference time: {pred_t:.4f} seconds")
         print("-" * 40)
 
+import time
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+# -----------------------------
+# Dummy protein sequence encoder
+# -----------------------------
+def encode_sequence(seq_length=100):
+    """
+    Simulates numerical encoding of a protein sequence
+    """
+    return np.random.rand(20)
+
+# -----------------------------
+# Simple ML model (proxy)
+# -----------------------------
+def create_model():
+    model = Sequential([
+        Dense(64, activation="relu", input_shape=(20,)),
+        Dense(32, activation="relu"),
+        Dense(16, activation="softmax")
+    ])
+    model.compile(optimizer="adam", loss="categorical_crossentropy")
+    return model
+
+# -----------------------------
+# Benchmark function
+# -----------------------------
+def benchmark(num_sequences):
+    model = create_model()
+
+    start_time = time.time()
+
+    for _ in range(num_sequences):
+        encoded_seq = encode_sequence()
+        encoded_seq = np.expand_dims(encoded_seq, axis=0)
+        _ = model.predict(encoded_seq, verbose=0)
+
+    end_time = time.time()
+    return end_time - start_time
+
+# -----------------------------
+# Run benchmarks
+# -----------------------------
+if __name__ == "__main__":
+    sizes = [10, 100]
+
+    print("Benchmarking Computational Protein Design Pipeline")
+    print("-" * 50)
+
+    for size in sizes:
+        runtime = benchmark(size)
+        print(f"Sequences: {size} | Runtime: {runtime:.4f} seconds")
+
+
