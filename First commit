@@ -18,3 +18,21 @@ git push origin main
 git add benchmark_runtime.py benchmark_comparison.md
 git commit -m "Add runtime benchmark and comparative positioning"
 git push
+feat: add benchmarking, in-silico validation, use-case notebook, and proposal-ready docs
+
+- Added runtime benchmark for ML protein sequence processing
+- Included minimal in-silico experimental proxy
+- Added Jupyter notebook for end-to-end use-case demonstration
+- Prepared proposal/grant-ready documentation
+- Improved reproducibility, validation, and roadmap clarity
+feat: add benchmarking, in-silico validation, use-case notebook, and proposal-ready docs
+
+- Added runtime benchmark for ML protein sequence processing
+- Included minimal in-silico experimental proxy
+- Added Jupyter notebook for end-to-end use-case demonstration
+- Prepared proposal/grant-ready documentation
+- Improved reproducibility, validation, and roadmap clarity
+git status
+git add .
+git commit -m "feat: add benchmarking, in-silico validation, use-case notebook, and proposal-ready docs"
+git push origin main
