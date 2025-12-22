@@ -118,3 +118,10 @@ This is suitable for:
 
 This benchmark demonstrates linear scaling behavior of the ML inference component with respect to sequence count. The objective is not biological accuracy, but to validate computational feasibility, pipeline structure, and performance characteristics suitable for early-stage protein design exploration.
 
+### Minimal In-Silico Experimental Proxy
+
+This experiment demonstrates relative ranking of protein
+sequences using computational proxies for ML prediction
+and structural stability.
+
+The goal is decision-support, not biological claims.
