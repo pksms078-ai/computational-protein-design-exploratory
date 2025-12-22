@@ -52,5 +52,8 @@ Finalize benchmarking: runtime scaling, conceptual comparison, and visualization
 git add benchmarking.md benchmark_plot.py benchmark_runtime.png
 git commit -m "Finalize benchmarking: runtime scaling, conceptual comparison, and visualization"
 git push
+git add Benchmark_Comparison.md
+git commit -m "Add conceptual benchmark comparison vs AlphaFold and Rosetta"
+git push
 
 
