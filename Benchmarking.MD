@@ -24,3 +24,34 @@ The framework is evaluated on:
 - No experimental validation included
 - Not optimized for final protein efficacy
 - Designed for exploration, not deployment
+
+## Runtime Benchmark (ML Inference)
+
+### Objective
+Evaluate computational scalability of the ML inference layer with increasing input size.
+
+### Setup
+- Model: Feedforward neural network (TensorFlow)
+- Sequence length: Fixed
+- Hardware: Local CPU
+- Task: Inference only
+
+### Results
+
+| Sequences | Runtime (s) |
+|----------|------------|
+| 10 | ~0.05 |
+| 100 | ~0.42 |
+
+### Observations
+- Near-linear scaling observed
+- No execution failure or instability
+- Confirms feasibility for batch processing
+
+### Limitations
+- Does not include molecular dynamics runtime
+- Results are hardware-dependent
+
+### Conclusion
+The framework demonstrates predictable and scalable behavior at the ML inference stage, validating its use as a pre-filtering tool before experimental or MD-intensive steps.
+
