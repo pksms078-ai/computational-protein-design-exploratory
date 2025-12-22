@@ -36,3 +36,5 @@ git status
 git add .
 git commit -m "feat: add benchmarking, in-silico validation, use-case notebook, and proposal-ready docs"
 git push origin main
+v0.3.0: Benchmarking, in-silico proxy, use-case notebook, proposal-ready structure
+git push
