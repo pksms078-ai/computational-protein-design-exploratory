@@ -1,0 +1,17 @@
+# Comparative Benchmark (Conceptual)
+
+This project does NOT attempt to biologically outperform AlphaFold or Rosetta.
+
+## Benchmark Focus
+- Pipeline scalability
+- Computational cost
+- Early-stage hypothesis screening
+
+| Tool        | Purpose                     | Compute Cost | Output Type |
+|------------|-----------------------------|--------------|-------------|
+| AlphaFold  | Final structure prediction  | Very High    | 3D Fold     |
+| Rosetta    | Physics-based modeling      | High         | Energetics  |
+| **This Work** | Early-stage filtering     | Low–Medium   | Feasible Candidates |
+
+## Key Insight
+This framework is designed to **reduce experimental search space**, not replace lab validation.
