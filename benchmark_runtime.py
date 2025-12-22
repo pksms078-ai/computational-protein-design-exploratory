@@ -56,6 +56,76 @@ if __name__ == "__main__":
         train_t, pred_t = run_benchmark(n)
         print(f"Sequences: {n}")
         print(f"Training time: {train_t:.4f} seconds")
+
+        import time
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.optimizers import Adam
+
+# -----------------------------
+# Dummy protein sequence encoder
+# -----------------------------
+def encode_sequence(seq):
+    """
+    Encodes protein sequence into fixed-length numeric vector.
+    This is a proxy encoding for benchmarking only.
+    """
+    aa_map = {aa: i+1 for i, aa in enumerate("ACDEFGHIKLMNPQRSTVWY")}
+    vector = np.zeros(20)
+    for aa in seq:
+        if aa in aa_map:
+            vector[aa_map[aa]-1] += 1
+    return vector / max(len(seq), 1)
+
+# -----------------------------
+# Generate dummy protein sequences
+# -----------------------------
+def generate_sequences(n, length=100):
+    amino_acids = "ACDEFGHIKLMNPQRSTVWY"
+    return [
+        "".join(np.random.choice(list(amino_acids), length))
+        for _ in range(n)
+    ]
+
+# -----------------------------
+# Simple ML model (proxy)
+# -----------------------------
+def create_model():
+    model = Sequential([
+        Dense(64, activation='relu', input_shape=(20,)),
+        Dense(32, activation='relu'),
+        Dense(8, activation='softmax')
+    ])
+    model.compile(
+        optimizer=Adam(learning_rate=0.001),
+        loss='categorical_crossentropy'
+    )
+    return model
+
+# -----------------------------
+# Benchmark function
+# -----------------------------
+def run_benchmark(num_sequences):
+    sequences = generate_sequences(num_sequences)
+    X = np.array([encode_sequence(seq) for seq in sequences])
+    
+    model = create_model()
+    
+    start = time.time()
+    _ = model.predict(X, verbose=0)
+    end = time.time()
+    
+    return end - start
+
+# -----------------------------
+# Main Benchmark Run
+# -----------------------------
+if __name__ == "__main__":
+    for n in [10, 100]:
+        runtime = run_benchmark(n)
+        print(f"Sequences: {n} | Runtime: {runtime:.4f} seconds")
+
         print(f"Inference time: {pred_t:.4f} seconds")
         print("-" * 40)
 
