@@ -15,3 +15,6 @@ git push origin main
 git add benchmarks/
 git commit -m "Add runtime benchmark for ML-based protein design pipeline"
 git push origin main
+git add benchmark_runtime.py benchmark_comparison.md
+git commit -m "Add runtime benchmark and comparative positioning"
+git push
