@@ -7,4 +7,8 @@ git push
 git add README.md
 git commit -m "Add citation instructions to README"
 git push
+git status
+git add benchmark_runtime.py Benchmarking.md
+git commit -m "Add ML inference runtime benchmark (10 vs 100 sequences)"
+git push origin main
 
